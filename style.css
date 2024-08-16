@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( 135deg, #52E5E7 30%, #130CB7 100%);
+}
+main {
+    background-color: whitesmoke;
+    width: 350px;
+    height: 520px; /* Set a fixed height */
+    border-radius: 20px;
+    box-shadow: 8px 9px 35px 4px rgba(0,0,0,0.75);
+    padding: 30px;
+    box-sizing: border-box;
+}
+main form{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-radius: 30px;
+}
+main form input, main form button{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1em;
+    padding: 15px;
+}
+main form i{
+    opacity: 0.7;
+}
+main .result{
+    padding: 15px 0px;
+    text-align: center;
+}
+main .result .city{
+    font-weight: bold;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+main .temperature img{
+    width: 120px;
+    filter: drop-shadow(0 10px 50px rgb(75, 73, 73));
+    margin: 5px;
+}
+main .temperature figcaption{
+    font-size: 3em;
+}
+main .description{
+    padding: 10px 0 30px;
+    font-size: 1.5em;
+}
+main ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:8px;
+}
+main li{
+    background-color: #3bcfa3;
+    padding: 20px 0px;
+    border-radius: 10px;
+}
+main li i{
+    display: block !important;
+    margin-bottom:5px;
+}
+/* For error - no city found */
+#main.error{
+ animation: errorEffect 0.5s linear 1;
+}
+@keyframes errorEffect {
+    0%{
+        transform: translate(10px,5px);
+    }
+    25%{
+        transform: translate(-5px,0px);
+    }
+    50%{
+        transform: translate(8px,2px);
+    }
+    75%{
+         transform: translate(-2px,5px);
+    }
+    100%{
+         transform: translate(0,0);
+    }
+}

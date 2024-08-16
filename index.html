@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <main id="main">
+    <form>
+        <input type="text" id="searchCity" placeholder="Enter city name">
+        <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </form>
+    <section class="result">
+        <figure class="city" id="city">
+            <figcaption id="cityName">Salem</figcaption>
+            <img src="https://flagsapi.com/IN/shiny/32.png" alt="flag" id="cityFlag">
+        </figure>
+        <figure class="temperature">
+            <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="temperatureImage" class="temperatureImage">
+            <figcaption>
+                <span id="temperatureValue"></span>
+            </figcaption>
+        </figure>
+        <p class="description">
+            Very cloudy 
+        </p>
+        <ul class="details">
+            <li>
+                <i class="fa-solid fa-wind"></i>
+                <span>wind</span>
+                <p id="wind"></p>
+            </li>
+            <li>
+                <i class="fa-solid fa-droplet"></i>
+                <span>Humidity</span>
+                <span id="humidity"></span>
+            </li>
+            <li>
+                <i class="fa-solid fa-gauge"></i>
+                <span>pressure</span>
+                <span id="pressure"></span>
+            </li>
+                </ul>
+        </ul>
+    </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

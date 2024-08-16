@@ -50,19 +50,19 @@ const updateUI=(data)=>{
             break;
 
          case 'Clear':
-            temperatureImage.src = "/images/clear.png";
+            temperatureImage.src = "images/clear.png";
             break;
 
          case 'Rain':
-            temperatureImage.src = "/images/rain.png";
+            temperatureImage.src = "images/rain.png";
             break;
 
          case 'Snow':
-            temperatureImage.src = "/images/snow.png";
+            temperatureImage.src = "images/snow.png";
             break;
 
          case 'Mist':
-            temperatureImage.src = "/images/mist.png";
+            temperatureImage.src = "images/mist.png";
             break;
         // default src of temperatureImage if condition is not above
          default:
@@ -82,7 +82,7 @@ const handleError=(error)=>{
     // resetting the data values to empty as no city found (error)
     cityName.innerText = '';
     temperature.querySelector('span').innerText = '';
-    temperatureImage.src = "/images/404.png"; // not found image
+    temperatureImage.src = "images/404.png"; // not found image
     temperatureImage.style.width = "140px";
     description.innerText = "City Not Found";
     details.style.visibility = "hidden"; // hiding visibility of weather details

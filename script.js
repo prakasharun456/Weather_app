@@ -46,7 +46,7 @@ const updateUI=(data)=>{
     let temperatureType = data.weather[0].main;
     switch (temperatureType) {
          case 'Clouds':
-            temperatureImage.src = "/images/cloud.png";
+            temperatureImage.src = "./images/cloud.png";
             break;
 
          case 'Clear':
